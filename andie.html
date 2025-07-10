@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A page displaying various projects.">
-    <title>Projects</title>
+    <meta name="description" content="A project page for ANDIE, a non-destructive image editor.">
+    <title>ANDIE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,52 +14,15 @@
     <nav class="topnav">
         <a href="index.html">home</a>
         /
-        <a href="projects.html">projects</a>
-        /
         <a href="contact.html">contact</a>
     </nav>
 
     <header>
-        <h1>My Projects</h1>
+        <h1>ANDIE</h1>
     </header>
 
     <main>
         <section>
-            <h2> Fantasy Football Stats</h2>
-            <p>Fantasy Football Stats is a full-stack application for accessing NFL fantasy information.
-            </p>
-            <img alt="Demo" src="fantasy_demo.gif" />
-
-            <h3>Development</h3>
-            <p>Firstly, I needed data for my database. Originally I used some CSV files available on GitHub to put into
-                my database, but the information was outdated and not relevant at all to what I wanted to achieve. Later
-                on, I used an external API to get data in JSON format, and used scripts to remove irrelvant information
-                (such as defensive players, which aren't relevant in fantasy football), and to convert it into CSV
-                files.
-            </p>
-
-            <p>From there, I created a PostgresQL database using the CSV files. It took a few goes to ensure that
-                columns were matching up and that keys were working, and some adjustments were required later on.
-            </p>
-            <p>I used the Spring Boot framework to build my Java back-end, and although tutorials and guides helped, a
-                lot of the learning I did was just through trial and error and running into issues as I went.
-            </p>
-            <p>The front-end wasn't supposed to be anything fancy, so I made a simple front-end with the help of AI, as
-                the front-end was simply a vehicle to display the learning I did on the back-end.
-            </p>
-            <h3>Languages/Tools Used</h3>
-
-            <ul>
-                <li>☕Java</li>
-                <li>🍃Spring Boot</li>
-                <li>🐘PostgreSQL</li>
-                <li>🟨Javascript</li>
-                <li>🟦HTML/🟥CSS</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>ANDIE</h2>
             <p>ANDIE is a non-destructive image editor, written in Java.</p>
 
             <img alt="Demo" src="andie_demo.gif" />
@@ -91,6 +54,11 @@
                 <li>📖Documentation</li>
         </section>
     </main>
+
+    <footer>
+        <span>&copy; 2025 Leo Cameron</span>
+        <a href="mailto:leocam2145@gmail.com">email me!</a>
+    </footer>
 </body>
 
 </html>
