@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta charset="UTF-8">
@@ -8,14 +9,88 @@
     <title>Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="topnav">
+    <nav class="topnav">
         <a href="index.html">home</a>
         /
         <a href="projects.html">projects</a>
         /
         <a href="contact.html">contact</a>
-    </div>
-    
+    </nav>
+
+    <header>
+        <h1>My Projects</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2> Fantasy Football Stats</h2>
+            <p>Fantasy Football Stats is a full-stack application for accessing NFL fantasy information.
+            </p>
+            <img alt="Demo" src="fantasy_demo.gif" />
+
+            <h3>Development</h3>
+            <p>Firstly, I needed data for my database. Originally I used some CSV files available on GitHub to put into
+                my database, but the information was outdated and not relevant at all to what I wanted to achieve. Later
+                on, I used an external API to get data in JSON format, and used scripts to remove irrelvant information
+                (such as defensive players, which aren't relevant in fantasy football), and to convert it into CSV
+                files.
+            </p>
+
+            <p>From there, I created a PostgresQL database using the CSV files. It took a few goes to ensure that
+                columns were matching up and that keys were working, and some adjustments were required later on.
+            </p>
+            <p>I used the Spring Boot framework to build my Java back-end, and although tutorials and guides helped, a
+                lot of the learning I did was just through trial and error and running into issues as I went.
+            </p>
+            <p>The front-end wasn't supposed to be anything fancy, so I made a simple front-end with the help of AI, as
+                the front-end was simply a vehicle to display the learning I did on the back-end.
+            </p>
+            <h3>Languages/Tools Used</h3>
+
+            <ul>
+                <li>☕Java</li>
+                <li>🍃Spring Boot</li>
+                <li>🐘PostgreSQL</li>
+                <li>🟨Javascript</li>
+                <li>🟦HTML/🟥CSS</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ANDIE</h2>
+            <p>ANDIE is a non-destructive image editor, written in Java.</p>
+
+            <img alt="Demo" src="andie_demo.gif" />
+            <h3>Development</h3>
+            <p>ANDIE was a university group project, meant to improve collaboration and development skills. It was a
+                great introduction to Git and the dynamic of developing software in a team.
+            </p>
+            <p>The project had two deadlines with a variety of requirements. A few features that I worked on were
+                Gaussian Blur, area transparency, and CI/CD.
+            </p>
+            <p>Gaussian Blur was the first feature I worked on, and it took a while. Familiarising myself with ANDIE's
+                skeleton codebase took some learning, and Gaussian Blur had some relatively tricky maths that introduced
+                some complications.
+            </p>
+            <p>I developed area transparency as an extra feature, and I really enjoyed implenting it, using
+                breadth-first search (BFS) to make similar colours transparent. It felt like a feature that a real image
+                editor would have, and it was satisfying utilisng BFS, which I had learnt in another class.
+            </p>
+            <p>CI/CD was straightforward to implement for ANDIE, with a few simple tests, packaging the project into a
+                zip, and uploading it to a website for download. It wasn't a topic that I had explored extensively
+                before, so it was really interesting exploring DevOps after spending most of the project writing code.
+            </p>
+
+            <h3>Languages/Tools Used</h3>
+            <ul>
+                <li>☕Java</li>
+                <li>🔶Git</li>
+                <li>♾️CI/CD</li>
+                <li>📖Documentation</li>
+        </section>
+    </main>
 </body>
+
 </html>
